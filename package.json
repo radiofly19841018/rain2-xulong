@@ -52,11 +52,14 @@
     "script-loader": "^0.6.1",
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",
-    "webpack": "^1.12.9",
+    "webpack": "^1.12.9"
   },
   "dependencies": {
     "jquery": "^2.1.4",
     "moment": "^2.12.0",
-    "url": "^0.11.0"
+    "url": "^0.11.0",
+    "vue": "^2.2.6",
+    "vue-loader": "^11.3.4",
+    "vue-router": "^2.4.0"
   }
 }

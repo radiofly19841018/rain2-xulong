@@ -36,17 +36,10 @@ module.exports = {
         test: /\.js$/,
         include: path.resolve(__dirname, 'scripts'),
         loader: "jshint-loader"
-      },
-      {
-        test: /\.coffee$/,
-        include: path.resolve(__dirname, 'scripts'),
-        loader: "coffeelint-loader"
       }
     ],
     loaders: [
       { test: /\.vue$/, loader: 'vue' },
-      { test: /\.coffee$/, loader: "coffee-loader" },
-      { test: /\.(coffee\.md|litcoffee)$/, loader: "coffee-loader?literate" },
       {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract('style-loader','css-loader'),
@@ -62,7 +55,7 @@ module.exports = {
       { test: /\.(woff|ttf|eot|svg|png|jpg|jpeg|gif|webp)/, loader: "file-loader"},
       { test: /\.(mp3)/, loader: "file-loader"},
       {
-        test: /\.es2015$/,
+        test: /\.js$/,
         include: path.resolve(__dirname,'scripts'),
         loader: 'babel?presets[]=es2015'
       }
