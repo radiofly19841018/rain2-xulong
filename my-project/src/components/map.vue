@@ -27,7 +27,7 @@ a {
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
+    <h2>map</h2>
     <ul>
       <li><a href="index.html" target="_blank">Core Docs</a></li>
       <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
@@ -47,17 +47,17 @@ a {
 </template>
 
 <script>
-export default {
-  name: 'hello',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
+  export default {
+    name: 'hello',
+    data () {
+      return {
+        msg: 'Welcome to Your Vue.js App'
+      }
+    },
+    created () {
+      const memeda = 'rimai'
+      console.log(memeda)
     }
-  },
-  created () {
-    const memeda = 'rimai'
-    console.log(memeda)
   }
-}
 </script>
 
