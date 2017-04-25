@@ -75,7 +75,7 @@
       })
       this.map = new AMap.Map('map')
       this.map.setZoom(4)
-      this.map.setMapStyle('fresh')
+      this.map.setMapStyle('normal')
 
       for (let location of this.locations) {
         let marker = new AMap.Marker({
