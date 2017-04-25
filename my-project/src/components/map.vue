@@ -1,19 +1,34 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
+<style lang="less">
+  .amap-info-content{
+    text-align: center;
+    padding-right: 25px;
+  }
+  .amap-info-close{
+    top: 11px;
+  }
+</style>
 <style lang="less" scoped>
-
+  #map{
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 1000px;
+  }
 </style>
 
 <template>
-  <div class="map">
+  <div id="map">
   </div>
 </template>
 
 <script>
+/* global AMap */
   export default {
     name: 'map',
     data () {
       return {
-        location: [
+        locations: [
           {name: '上海科技馆', location: ['121.542492', '31.219134'], info: 'AV乐园、地壳探秘(全息音响)', time: '2002.03'},
           {name: '深圳欢乐谷', location: ['113.980847', '22.541575'], info: '金矿听音室', time: '2002.04'},
           {name: '山东科技馆', location: ['117.026406', '36.661398'], info: '全息音响', time: '2003.10'},
@@ -43,12 +58,34 @@
           {name: '克拉玛依科技馆', location: ['84.88786', '45.571006'], info: '全息音响', time: '2014.08'},
           {name: '深圳锦绣中华', location: ['113.988217', '22.531084'], info: '茶马锅庄听音室', time: '2015.09'},
           {name: '宜兴科技馆', location: ['119.851664', '31.356026'], info: '全息音响', time: '2016.08'}
-        ]
+        ],
+        map: null,
+        infoWindow: null
       }
     },
-    created () {
-      const memeda = 'rimai'
-      console.log(memeda)
+    methods: {
+      openInfoWindow (click) {
+        this.infoWindow.setContent(click.target.content)
+        this.infoWindow.open(this.map, click.target.getPosition())
+      }
+    },
+    mounted () {
+      this.infoWindow = new AMap.InfoWindow({
+        offset: new AMap.Pixel(10, -25)
+      })
+      this.map = new AMap.Map('map')
+      this.map.setZoom(4)
+      this.map.setMapStyle('fresh')
+
+      for (let location of this.locations) {
+        let marker = new AMap.Marker({
+          position: [location.location[0], location.location[1]]
+        })
+        marker.setMap(this.map)
+        marker.content = location.name + '<br>' + location.info + '<br>' + location.time
+        marker.on('click', this.openInfoWindow)
+      }
+      this.map.setFitView()
     }
   }
 </script>

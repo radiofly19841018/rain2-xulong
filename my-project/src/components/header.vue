@@ -1,5 +1,9 @@
 <style lang="less" scoped>
   #header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50px;
     background-color: #000;
   }
 </style>
