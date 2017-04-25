@@ -1,57 +1,49 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="less" scoped>
-.hello{
-  h1{
-    // display: none;
-  }
-}
-h1, h2 {
-  font-weight: normal;
-}
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 </style>
 
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>map</h2>
-    <ul>
-      <li><a href="index.html" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://gitter.im/vuejs/vue" target="_blank">Gitter Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      <br>
-      <li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+  <div class="map">
   </div>
 </template>
 
 <script>
   export default {
-    name: 'hello',
+    name: 'map',
     data () {
       return {
-        msg: 'Welcome to Your Vue.js App'
+        location: [
+          {name: '上海科技馆', location: ['121.542492', '31.219134'], info: 'AV乐园、地壳探秘(全息音响)', time: '2002.03'},
+          {name: '深圳欢乐谷', location: ['113.980847', '22.541575'], info: '金矿听音室', time: '2002.04'},
+          {name: '山东科技馆', location: ['117.026406', '36.661398'], info: '全息音响', time: '2003.10'},
+          {name: '温州科技馆', location: ['120.700537', '27.988484'], info: '全息音响、磁悬浮广场等展品6套', time: '2004.09'},
+          {name: '河北科技馆', location: ['114.525239', '38.04211'], info: '全息音响', time: '2005.09'},
+          {name: '东莞科技馆', location: ['113.746581', '23.009504'], info: '全息音响', time: '2005.10'},
+          {name: '郑州科技馆', location: ['113.627088', '34.7459'], info: '全息音响、水与力展区、螺之美展区、二层改造、力学展区', time: '2005.11,2008.06,2010.10,2010.11,2011.06'},
+          {name: '广东科学中心', location: ['113.362506', '23.03941'], info: '参加展品征集活动获3等奖', time: '2005.12'},
+          {name: '四川科技馆', location: ['104.065791', '30.659908'], info: '全息音响、信息科技长廊等', time: '2006.02'},
+          {name: '贵州科技馆', location: ['106.705514', '26.573161'], info: '全息音响', time: '2006.10'},
+          {name: '大庆市科技馆', location: ['125.09061', '46.582371'], info: '全息音响', time: '2007.12'},
+          {name: '陕西自然博物馆', location: ['108.946596', '34.195913'], info: '全息音响', time: '2007.12'},
+          {name: '新疆科技馆', location: ['87.577945', '43.83416'], info: '地震体验、戏水乐园、怒发冲冠等', time: '2008.06'},
+          {name: '天津科技馆', location: ['117.218384', '39.087285'], info: '全息音响', time: '2008.06'},
+          {name: '余杭科技馆', location: ['120.294823', '30.424863'], info: '全息音响', time: '2008.09'},
+          {name: '芜湖科技馆', location: ['118.373879', '31.383058'], info: '全息音响', time: '2008.11'},
+          {name: '上海华侨城欢乐谷', location: ['121.214767', '31.096097'], info: '全息音响', time: '2009.07'},
+          {name: '浙江省科技馆', location: ['120.164936', '30.276404'], info: '全息音响', time: '2009.08'},
+          {name: '青海省科技馆', location: ['101.714029', '36.64654'], info: '全息音响等', time: '2009.09'},
+          {name: '临沂市科技馆', location: ['118.356532', '35.087249'], info: '全息音响等', time: '2010.02'},
+          {name: '山西清徐科技馆', location: ['112.567436', '37.796127'], info: '视听乐园、数学天地展区', time: '2010.03'},
+          {name: '威海科技馆', location: ['122.140613', '37.467507'], info: '全息音响', time: '2010.10'},
+          {name: '陕西科技馆', location: ['108.956208', '34.263969'], info: '人体反应测试', time: '2012.01'},
+          {name: '榆林科技馆', location: ['109.750553', '38.235483'], info: '全息音响', time: '2012.05'},
+          {name: '河南永城科技馆', location: ['116.45701', '33.947551'], info: '全息音响', time: '2012.09'},
+          {name: '上海崇明科技馆', location: ['121.429906', '31.618665'], info: '一层及二层展品', time: '2013.06'},
+          {name: '克拉玛依科技馆', location: ['84.88786', '45.571006'], info: '全息音响', time: '2014.08'},
+          {name: '深圳锦绣中华', location: ['113.988217', '22.531084'], info: '茶马锅庄听音室', time: '2015.09'},
+          {name: '宜兴科技馆', location: ['119.851664', '31.356026'], info: '全息音响', time: '2016.08'}
+        ]
       }
     },
     created () {
