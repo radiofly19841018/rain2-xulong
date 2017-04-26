@@ -12,7 +12,7 @@
         float: left;
         padding: 3px;
         margin-top: 10px;
-        background-color: #eeeeee;
+        // background-color: #eeeeee;
         border-radius: 4px;
         img{
           display: block;
@@ -27,7 +27,7 @@
   <div id="header">
     <div class="header-conatiner">
       <div class="logo-box">
-        <img src="../assets/logo.png">
+        <img src="../assets/logo2.svg" v-on:mouseover="showMenu">
       </div>
     </div>
     {{mms}}
@@ -39,6 +39,11 @@
     data () {
       return {
         mms: '222'
+      }
+    },
+    methods: {
+      showMenu () {
+        console.log('11111')
       }
     }
   }
