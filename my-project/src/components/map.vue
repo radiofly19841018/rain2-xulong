@@ -9,16 +9,24 @@
   }
 </style>
 <style lang="less" scoped>
-  #map{
+  #map-container{
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
     height: 100%;
     width: 1000px;
+    box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.24);
+    #map{
+      height: 100%;
+      width: 100%;
+    }
   }
 </style>
 
 <template>
-  <div id="map">
+  <div id="map-container">
+    <div id="map">
+    </div>
   </div>
 </template>
 

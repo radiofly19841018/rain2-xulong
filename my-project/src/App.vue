@@ -11,11 +11,12 @@ html,body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  background-color: #ffffff;
 }
   #app {
     position: relative;
-    padding-top: 50px;
+    padding-top: 80px;
+    padding-bottom: 20px;
     height: 100%;
   }
 </style>
