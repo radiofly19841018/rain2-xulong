@@ -8,11 +8,14 @@
     .header-conatiner{
       width: 1000px;
       margin: 0 auto;
+      .links{
+        color: #ffffff;
+        text-decoration: none;
+      }
       .logo-box{
         float: left;
         padding: 3px;
         margin-top: 10px;
-        // background-color: #eeeeee;
         border-radius: 4px;
         img{
           display: block;
@@ -26,8 +29,10 @@
 <template>
   <div id="header">
     <div class="header-conatiner">
+      <router-link class='links' :to="{ name: 'map'}">To Map</router-link>
+      <router-link class='links' :to="{ name: 'info'}">To Info</router-link>
       <div class="logo-box">
-        <img src="../assets/logo2.svg" v-on:mouseover="showMenu">
+        <!-- <img src="../assets/logo2.svg" v-on:mouseover="showMenu"> -->
       </div>
     </div>
     {{mms}}

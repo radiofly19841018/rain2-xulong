@@ -5,9 +5,14 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/map',
       name: 'map',
       component: require('../components/map')
+    },
+    {
+      path: '/info',
+      name: 'info',
+      component: require('../components/info')
     }
   ]
 })

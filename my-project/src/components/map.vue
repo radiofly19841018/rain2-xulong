@@ -81,6 +81,7 @@
       this.infoWindow = new AMap.InfoWindow({
         offset: new AMap.Pixel(10, -25)
       })
+      console.log(this.infoWindow)
       this.map = new AMap.Map('map')
       this.map.setZoom(4)
       this.map.setMapStyle('normal')
@@ -91,7 +92,7 @@
         })
         marker.setMap(this.map)
         marker.content = location.name + '<br>' + location.info + '<br>' + location.time
-        marker.on('click', this.openInfoWindow)
+        marker.on('mouseover', this.openInfoWindow)
       }
       this.map.setFitView()
     }
