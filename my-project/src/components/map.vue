@@ -15,7 +15,7 @@
     padding: 10px;
     height: 100%;
     width: 1000px;
-    box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.24);
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.3);
     #map{
       height: 100%;
       width: 100%;

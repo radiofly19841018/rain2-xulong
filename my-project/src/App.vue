@@ -15,8 +15,8 @@ html,body{
 }
   #app {
     position: relative;
-    padding-top: 80px;
-    padding-bottom: 20px;
+    padding-top: 100px;
+    padding-bottom: 120px;
     height: 100%;
   }
 </style>
@@ -25,6 +25,7 @@ html,body{
   <div id="app">
     <appheader></appheader>
     <router-view></router-view>
+    <appfoot></appfoot>
   </div>
 </template>
 
@@ -32,7 +33,8 @@ html,body{
   export default {
     name: 'app',
     components: {
-      appheader: require('./components/header.vue')
+      appheader: require('./components/header.vue'),
+      appfoot: require('./components/foot.vue')
     }
   }
 </script>
