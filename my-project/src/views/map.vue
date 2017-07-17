@@ -84,7 +84,6 @@
       this.infoWindow = new AMap.InfoWindow({
         offset: new AMap.Pixel(10, -25)
       })
-      console.log(this.infoWindow)
       this.map = new AMap.Map('map')
       this.map.setZoom(4)
       this.map.setMapStyle('normal')

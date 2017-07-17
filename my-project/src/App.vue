@@ -7,7 +7,7 @@ html,body{
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Microsoft Yahei", "PingFang SC", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -15,9 +15,10 @@ html,body{
 }
   #app {
     position: relative;
-    padding-top: 100px;
-    padding-bottom: 120px;
+    padding-top: 90px;
+    padding-bottom: 130px;
     height: 100%;
+    min-height: 600px;
   }
 </style>
 
