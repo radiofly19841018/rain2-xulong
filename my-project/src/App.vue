@@ -34,7 +34,7 @@ html,body{
     name: 'app',
     components: {
       appheader: require('./components/header.vue'),
-      appfoot: require('./components/foot.vue')
+      appfoot: require('./components/footer.vue')
     }
   }
 </script>

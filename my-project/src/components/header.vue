@@ -29,10 +29,10 @@
 <template>
   <div id="header">
     <div class="header-conatiner">
-      <router-link class='links' :to="{ name: 'map'}">To Map</router-link>
-      <router-link class='links' :to="{ name: 'info'}">To Info</router-link>
+      <router-link class='links' :to="{ name: 'map'}">项目分部</router-link>
+      <router-link class='links' :to="{ name: 'info'}">公司简介</router-link>
       <div class="logo-box">
-        <!-- <img src="../assets/logo2.svg" v-on:mouseover="showMenu"> -->
+        <img src="../assets/logo/logo2.png" v-on:mouseover="showMenu">
       </div>
     </div>
     {{mms}}

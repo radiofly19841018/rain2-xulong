@@ -7,12 +7,17 @@ export default new Router({
     {
       path: '/map',
       name: 'map',
-      component: require('../components/map')
+      component: require('../views/map')
     },
     {
       path: '/info',
       name: 'info',
-      component: require('../components/info')
+      component: require('../views/info')
+    },
+    {
+      path: '/exhibition/:id',
+      name: 'exhibition',
+      component: require('../views/exhibition')
     }
   ]
 })
