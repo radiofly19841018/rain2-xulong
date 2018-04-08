@@ -15,6 +15,11 @@ export default new Router({
       component: require('../views/map')
     },
     {
+      path: '/menu/',
+      name: 'menu',
+      component: require('../views/menu')
+    },
+    {
       path: '/exhibition/:id',
       name: 'exhibition',
       component: require('../views/exhibition')

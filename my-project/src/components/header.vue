@@ -1,13 +1,13 @@
 <style lang="less" scoped>
   #header{
-    position: absolute;
-    top: 0;
+    flex: 0;
+    flex-shrink: 0;
     width: 100%;
     height: 80px;
     background-color: #293239;
     .header-conatiner{
       position: relative;
-      width: 1000px;
+      width: 1200px;
       height: 100%;
       margin: 0 auto;
       .links-box{
@@ -59,7 +59,7 @@
       <div class="links-box">
         <router-link class='links' :class="{'active':pageName==='index'}" :to="{ name: 'index'}">公司简介</router-link>
         <router-link class='links' :class="{'active':pageName==='map'}" :to="{ name: 'map'}">项目分布</router-link>
-        <router-link class='links' :class="{'active':pageName==='riri'}" :to="{}">项目展示</router-link>
+        <router-link class='links' :class="{'active':pageName==='menu'}" :to="{ name: 'menu'}">项目展示</router-link>
       </div>
     </div>
   </div>

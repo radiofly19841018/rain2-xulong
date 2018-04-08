@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 html,body{
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -12,20 +12,32 @@ html,body{
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
   #app {
-    position: relative;
-    padding-top: 90px;
-    padding-bottom: 130px;
-    height: 100%;
-    min-height: 600px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .page-info{
+      margin: 10px 0;
+      box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.3);
+      padding: 10px;
+      width: 1200px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      color: #13567a;
+    }
   }
 </style>
 
 <template>
   <div id="app">
     <appheader></appheader>
-    <router-view></router-view>
+    <router-view class="page-info"></router-view>
     <appfoot></appfoot>
   </div>
 </template>

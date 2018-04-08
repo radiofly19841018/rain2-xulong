@@ -1,12 +1,12 @@
 <style lang="less" scoped>
   #footer{
-    position: absolute;
-    bottom: 0;
+    flex: 0;
+    flex-shrink: 0;
     width: 100%;
     height: 120px;
     background-color: #293239;
     .footer-conatiner{
-      width: 1000px;
+      width: 1200px;
       margin: 0 auto;
       padding-top: 10px;
       color: #25bbd6;
