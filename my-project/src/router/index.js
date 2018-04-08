@@ -5,14 +5,14 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
+      path: '/',
+      name: 'index',
+      component: require('../views/index')
+    },
+    {
       path: '/map',
       name: 'map',
       component: require('../views/map')
-    },
-    {
-      path: '/info',
-      name: 'info',
-      component: require('../views/info')
     },
     {
       path: '/exhibition/:id',
