@@ -38,16 +38,15 @@
       <template v-for="item, index of menu">
         <div class="item-row" v-if="index % 2 === 0">
           <div class="item-inner">
-            <img class="item-inner-img" :src="item.url">
+            <img @click="showImg(item)" class="item-inner-img" :src="item.url">
             {{item.title}}
           </div>
           <div class="item-inner" v-if="index < menu.length">
-            <img class="item-inner-img" :src="menu[index+1].url">
+            <img @click="showImg(menu[index+1])" class="item-inner-img" :src="menu[index+1].url">
             {{menu[index+1].title}}
           </div>
         </div>
       </template>
-      
     </div>
   </section>
 </template>
@@ -60,8 +59,10 @@
         menu: menu || []
       }
     },
-    mounted () {
-      console.log(menu)
+    methods: {
+      showImg (item) {
+        this.$root.$emit('showImg', item)
+      }
     }
   }
 </script>

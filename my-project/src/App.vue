@@ -39,6 +39,7 @@ html,body{
     <appheader></appheader>
     <router-view class="page-info"></router-view>
     <appfoot></appfoot>
+    <imgBox></imgBox>
   </div>
 </template>
 
@@ -47,7 +48,8 @@ html,body{
     name: 'app',
     components: {
       appheader: require('./components/header.vue'),
-      appfoot: require('./components/footer.vue')
+      appfoot: require('./components/footer.vue'),
+      imgBox: require('./components/img-box.vue')
     }
   }
 </script>
