@@ -4,7 +4,15 @@
     min-width: 1400px;
     padding: 0;
     margin: 0;
+    overflow: hidden;
+    position: relative;
     .swiper-container{
+      width: 100%;
+      .swiper-wrapper{
+        .swiper-slide{
+          height: auto;
+        }
+      }
     }
   }
 
@@ -17,8 +25,8 @@
         <img class="swiper-slide" src="../assets/images/banner-01.png">
         <img class="swiper-slide" src="../assets/images/banner-02.png">
       </div>
+      <div class="swiper-pagination"></div>
     </div>
-    <!-- <div class="swiper-pagination"></div> -->
   </div>
 </template>
 
