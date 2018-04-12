@@ -6,6 +6,10 @@
     margin: 0;
     overflow: hidden;
     position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #293239;
+    box-shadow: none;
     .swiper-container{
       width: 100%;
       .swiper-wrapper{
