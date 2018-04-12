@@ -6,7 +6,7 @@
     height: 120px;
     background-color: #293239;
     .footer-conatiner{
-      width: 1200px;
+      width: 1400px;
       margin: 0 auto;
       padding-top: 10px;
       color: #25bbd6;

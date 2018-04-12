@@ -25,7 +25,7 @@ html,body{
       margin: 10px 0;
       box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.3);
       padding: 10px;
-      width: 1200px;
+      width: 1400px;
       flex-grow: 1;
       display: flex;
       flex-direction: column;
@@ -37,7 +37,9 @@ html,body{
 <template>
   <div id="app">
     <appheader></appheader>
-    <router-view class="page-info"></router-view>
+    <keep-alive>
+      <router-view class="page-info"></router-view>
+    </keep-alive>
     <appfoot></appfoot>
     <imgBox></imgBox>
   </div>

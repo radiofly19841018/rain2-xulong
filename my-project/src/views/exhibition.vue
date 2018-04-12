@@ -5,6 +5,7 @@
 <template>
   <div id="exhibition">
     图片
+    
   </div>
 </template>
 
