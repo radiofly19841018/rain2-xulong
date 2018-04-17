@@ -7,27 +7,27 @@ export default new Router({
     {
       path: '/',
       name: 'index',
-      component: require('../views/index')
+      component: resolve => require(['../views/index'], resolve)
     },
     {
       path: '/map',
       name: 'map',
-      component: require('../views/map')
+      component: resolve => require(['../views/map'], resolve)
     },
     {
       path: '/info',
       name: 'info',
-      component: require('../views/info')
+      component: resolve => require(['../views/info'], resolve)
     },
     {
       path: '/menu/',
       name: 'menu',
-      component: require('../views/menu')
+      component: resolve => require(['../views/menu'], resolve)
     },
     {
       path: '/exhibition/:id',
       name: 'exhibition',
-      component: require('../views/exhibition')
+      component: resolve => require(['../views/exhibition'], resolve)
     }
   ]
 })

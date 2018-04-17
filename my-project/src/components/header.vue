@@ -46,6 +46,17 @@
           height: 60px;
         }
       }
+      .old-page{
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 5px;
+        margin-top: 20px;
+        color: #25bbd6;
+        &:hover{
+          color: #ffffff;
+        }
+      }
     }
   }
 </style>
@@ -62,6 +73,7 @@
         <router-link class='links' :class="{'active':pageName==='map'}" :to="{ name: 'map'}">项目分布</router-link>
         <router-link class='links' :class="{'active':pageName==='menu'}" :to="{ name: 'menu'}">项目展示</router-link>
       </div>
+      <a class="old-page" href="xl/">旭龙游乐</a>
     </div>
   </div>
 </template>
