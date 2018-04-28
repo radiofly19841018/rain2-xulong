@@ -65,12 +65,12 @@
   <div id="header">
     <div class="header-conatiner">
       <div class="logo-box">
-        <img src="../assets/logo/logo2.png">
+        <img src="../assets/images/new-logo-01.png">
       </div>
       <div class="links-box">
         <router-link class='links' :class="{'active':pageName==='index'}" :to="{ name: 'index'}">首页</router-link>
         <router-link class='links' :class="{'active':pageName==='info'}" :to="{ name: 'info'}">公司简介</router-link>
-        <router-link class='links' :class="{'active':pageName==='map'}" :to="{ name: 'map'}">项目分布</router-link>
+        <router-link class='links' :class="{'active':pageName==='map'}" :to="{ name: 'map'}">成功案例</router-link>
         <router-link class='links' :class="{'active':pageName==='menu'}" :to="{ name: 'menu'}">项目展示</router-link>
       </div>
       <a class="old-page" href="xl/">旭龙游乐</a>

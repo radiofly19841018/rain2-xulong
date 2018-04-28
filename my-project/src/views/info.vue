@@ -34,7 +34,7 @@
 <template>
   <div id="other-information">
     <div class="info-title">
-      公司简介／<span>COMPANY PROFILE</span>
+      公司简介<span>／COMPANY PROFILE</span>
     </div>
     <div class="info-text">
       <p class="info-row">
@@ -51,7 +51,7 @@
       </p>
     </div>
     <div class="info-title">
-      企业文化<span>COMPANY CULTURE</span>
+      企业文化<span>／COMPANY CULTURE</span>
     </div>
     <div class="info-text">
       <p class="info-row">
@@ -68,7 +68,7 @@
       </p>
     </div>
     <div class="info-title">
-      发展历程<span>DEVELOPMENT PROCESS</span>
+      发展历程<span>／DEVELOPMENT PROCESS</span>
     </div>
     <div class="info-text">
       <p class="info-row">
